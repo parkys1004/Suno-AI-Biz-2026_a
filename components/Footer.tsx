@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckSquare } from 'lucide-react';
+import { CheckSquare, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -24,8 +24,20 @@ const Footer: React.FC = () => {
              ))}
         </div>
 
-        <div className="text-center text-slate-500 text-xs pt-8 border-t border-slate-800">
-            © 2026 AI Music Strategy Report Dashboard. 
+        <div className="flex flex-col items-center justify-center pt-8 border-t border-slate-800">
+            <a 
+                href="https://kmong.com/self-marketing/730531/ZQh4nXZpK5" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group px-8 py-3 bg-[#FFD400] text-slate-900 font-bold rounded-xl hover:bg-[#ffe033] transition-all shadow-lg hover:shadow-[#FFD400]/20 flex items-center gap-2 transform hover:-translate-y-1 mb-6"
+            >
+                <span>크몽 바로가기</span>
+                <ExternalLink size={16} className="opacity-70 group-hover:opacity-100 transition-opacity" />
+            </a>
+
+            <div className="text-center text-slate-500 text-xs">
+                © 2026 AI Music Strategy Report Dashboard. 
+            </div>
         </div>
       </div>
     </footer>
