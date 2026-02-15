@@ -1,6 +1,7 @@
 import React from 'react';
 import { DISTRIBUTORS } from '../constants';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 
 const DistributorTable: React.FC = () => {
   return (
@@ -33,7 +34,17 @@ const DistributorTable: React.FC = () => {
                     transition={{ delay: idx * 0.1 }}
                     className="hover:bg-indigo-50/30 transition-colors"
                 >
-                    <td className="px-6 py-4 whitespace-nowrap font-bold text-slate-900">{dist.name}</td>
+                    <td className="px-6 py-4 whitespace-nowrap font-bold text-slate-900">
+                        <a 
+                            href={dist.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-1.5 hover:text-indigo-600 hover:underline decoration-indigo-600/30 underline-offset-4 transition-all"
+                        >
+                            {dist.name}
+                            <ExternalLink size={14} className="opacity-40" />
+                        </a>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
                             dist.policyType === 'good' ? 'bg-green-100 text-green-800' :

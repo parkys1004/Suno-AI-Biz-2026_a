@@ -17,6 +17,7 @@ export interface BusinessModel {
 
 export interface Distributor {
   name: string;
+  url: string; // Added URL property
   policy: string;
   policyType: 'good' | 'warning' | 'neutral';
   cost: string;

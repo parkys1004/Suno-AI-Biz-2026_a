@@ -56,6 +56,7 @@ export const BUSINESS_MODELS: BusinessModel[] = [
 export const DISTRIBUTORS: Distributor[] = [
   {
     name: 'DistroKid',
+    url: 'https://distrokid.com',
     policy: '허용 (표기 권장)',
     policyType: 'good',
     cost: '연간 구독제 ($22.99~)',
@@ -64,6 +65,7 @@ export const DISTRIBUTORS: Distributor[] = [
   },
   {
     name: 'TuneCore',
+    url: 'https://www.tunecore.com',
     policy: '허용',
     policyType: 'good',
     cost: '곡당 결제 or 무제한',
@@ -71,7 +73,17 @@ export const DISTRIBUTORS: Distributor[] = [
     note: '퍼블리싱 관리 기능 우수'
   },
   {
+    name: 'Ditto Music',
+    url: 'https://dittomusic.com',
+    policy: '허용',
+    policyType: 'good',
+    cost: '연간 구독제 ($19~)',
+    royalty: '100%',
+    note: '무제한 업로드, 차트 등록 및 프로모션 툴'
+  },
+  {
     name: 'CD Baby',
+    url: 'https://cdbaby.com',
     policy: '검수 엄격',
     policyType: 'warning',
     cost: '곡당 결제 (영구)',
@@ -80,6 +92,7 @@ export const DISTRIBUTORS: Distributor[] = [
   },
   {
     name: 'Amuse',
+    url: 'https://amuse.io',
     policy: '허용',
     policyType: 'good',
     cost: '무료 (느림) / Pro',
